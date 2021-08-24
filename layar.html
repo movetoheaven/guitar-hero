@@ -1,0 +1,69 @@
+
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      />
+      <title>Guitar Hero</title>
+      <!-- display-3 command di bootstrap -->
+      <style>
+         
+        .container {
+          position: absolute;
+          top: 30%;
+          left: 50%;
+          font-family: 'Courier New', Courier, monospace;
+        }
+        .display-3 {
+          position: absolute;
+          top: 15%;
+          left: 45%;
+        }
+        .tombol{
+          position: absolute;
+          left: 150px;
+        }
+      </style>
+    </head>
+
+    <body>
+        <h5>Rule! untuk langkah pertama gunakan + atau -</h5>
+        <p>________________________________________________________________________</p>
+        <!--<h1 class="display-3">Guitar Hero</h1> -->
+        <span id="garis1">
+          <span></span>
+        </span>
+        <input id="kali" class="tombol" type="button" onclick="kali()" value="x">
+        <br/>
+        <br/>
+        <span id="garis2">
+          <span></span>
+        </span>
+        <input id="tambah" class="tombol" type="button" onclick="tambah()" value="+">
+        <br/>
+        <br/>
+        <span id="garis3">
+          <span></span>
+        </span>
+        <input id="kurang" class="tombol" type="button" onclick="kurang()" value="-">
+        <br >
+        <p>________________________________________________________________________</p>
+        <p>Angka Saat ini : 
+          <span id="now">
+            0
+          </span>
+        </p>
+        <p id="ortu">Angka Target : </p>
+        <p>Total Score : 
+          <span id="score">
+            0
+          </span>
+      </p>
+    </body>
+    <script src="kode.js"></script>
+</html>
+
